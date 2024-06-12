@@ -1,130 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Welcome to My CV</title>
 </head>
 
 <body>
   <header>
-    <h1>Welcome to My CV</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-        <li><a href="pages/gallery.html">Gallery</a></li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+    <h1 class="title">Welcome to My CV</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- About me -->
+  <main class="wrapper">
 
-  <h2>Бойовий птах. Біологічна зброя. Тестувальник</h2>
-  <h3>Бандерогусак</h3>
-  <p>
-      Довгий час я був звичайним гусаком, ходив і ґа-ґа-кав, але в 2019 році став айтівцем. А минулого року відправився добровольцем у біологічну лабораторію під Харковом. 
-      Мене добряче екіпірували, і тепер я гашу ракетами по мацкві. У вільний час полюбляю гуляти волошковими галявинами та тестую програмне забезпечення.
-  </p>
+      <!-- About me -->
 
-  <!-- Projects -->
+    <div class="about-me">
+      <h2 class="my-name">Бандерогусак</h2>
+      <h3 class="my-profession">Бойовий птах. Біологічна зброя. Тестувальник</h3>
+      <p class="my-summary">
+          Довгий час я був звичайним гусаком, ходив і ґа-ґа-кав, але в 2019 році став айтівцем. А минулого року відправився добровольцем у біологічну лабораторію під Харковом. 
+          Мене добряче екіпірували, і тепер я гашу ракетами по мацкві. У вільний час полюбляю гуляти волошковими галявинами та тестую програмне забезпечення.
+      </p>
+    </div>
+    <!-- Projects -->
+    <div class="projects-container">
+      <h3 class="main-content-title">Projects</h3>
+      <ol class="projects-list">
+        <li class="projects-item">
+          <strong>Birdwatcher</strong>
+          <p class="project">Веб-додаток для спостереження за птахами, де користувачі можуть додавати фотографії та описи своїх спостережень, а також переглядати записи інших користувачів.</p>
+        </li>
+        <li class="projects-item">
+          <strong>SkyDefense</strong>
+          <p class="project">Платформа для управління системою повітряної оборони, розроблена для візуалізації та аналізу даних у реальному часі, з використанням Python і Flask для бекенда і PostgreSQL для зберігання даних.</p>
+        </li>
+        <li class="projects-item">
+          <strong>GoslingChat</strong>
+          <p class="project">Чат-додаток для гусей, що дає змогу обмінюватися повідомленнями і фотографіями в реальному часі. Використовує React.js для фронтенда і Firebase для бекенда і бази даних.</p>
+        </li>
+      </ol>
+    </div>
 
-  <h3>Projects</h3>
-  <ol>
-    <li>
-      <strong>Birdwatcher</strong>
-      <p>Веб-додаток для спостереження за птахами, де користувачі можуть додавати фотографії та описи своїх спостережень, а також переглядати записи інших користувачів.</p>
-    </li>
-    <li>
-      <strong>SkyDefense</strong>
-      <p>Платформа для управління системою повітряної оборони, розроблена для візуалізації та аналізу даних у реальному часі, з використанням Python і Flask для бекенда і PostgreSQL для зберігання даних.</p>
-    </li>
-    <li>
-      <strong>GoslingChat</strong>
-      <p>Чат-додаток для гусей, що дає змогу обмінюватися повідомленнями і фотографіями в реальному часі. Використовує React.js для фронтенда і Firebase для бекенда і бази даних.</p>
-    </li>
-  </ol>
-    
-  <!-- Work experience -->
+    <!-- Work experience -->
+    <div class="companies-container"></div>
+      <h3 class="main-content-title">Work Experience</h3>
 
-  <h3>Work Experience</h3>
+      <!-- Company 1 -->
 
-  <!-- Company 1 -->
+      <div class="company-container">
+        <h4 class="company-position">Бойовий птах</h4>
+        <h5 class="company-position-accent">Перша біолабораторія під Харковом</h5>
+        <p class="company-period">March 2022 - up to now | Ukraine</p>
+        <ul class="company-duties-list">
+          <li class="company-duties-item">Збиття російських воєнних літаків</li>
+          <li class="company-duties-item">Щотижневі запуски по 4х позиціях, звідки готувалось нападєніє</li>
+          <li class="company-duties-item">Пуски ракет на мацкву, на чик-чирика, на курс рубля та на бункер</li>
+          <li class="company-duties-item">Розвідка: нічні командировки у Бєлгород для плантацій бавовни</li>
+        </ul>
+      </div>
 
-  <h4>Бойовий птах</h4>
-  <h5>Перша біолабораторія під Харковом</h5>
-  <p>March 2022 - up to now | Ukraine</p>
-  <ul>
-    <li>Збиття російських воєнних літаків</li>
-    <li>Щотижневі запуски по 4х позиціях, звідки готувалось нападєніє</li>
-    <li>Пуски ракет на мацкву, на чик-чирика, на курс рубля та на бункер</li>
-    <li>Розвідка: нічні командировки у Бєлгород для плантацій бавовни</li>
-  </ul>
-    
-  <!-- Company 2 -->
+      <!-- Company 2 -->
 
-  <h4>QA Manual</h4>
-  <p>October 2019 - up to now | Ukraine</p>
-  <ul>
-    <li>Проведення ручного тестування веб-сайтів і мобільних застосунків</li>
-    <li>Ідентифікація та документування багів, помилок і недоліків</li>
-    <li>Розробка та виконання тестових сценаріїв і тест-кейсів</li>
-    <li>Співпраця з командами розробників для покращення якості програмного забезпечення</li>
-    <li>Верифікація виправлень багів і перевірка регресійних тестів</li>
-    <li>Аналіз продуктивності SPA і статичних сайтів</li>
-    <li>Розробка та впровадження стратегій тестування для нових функціональних можливостей</li>
-  </ul>
-    
-  <!-- Company 3 -->
+      <div class="company-container">
+        <h4 class="company-position">QA Manual</h4>
+        <h5 class="company-position-accent">Freelance</h5>
+        <p class="company-period">October 2019 - up to now | Ukraine</p>
+        <ul class="company-duties-list">
+          <li class="company-duties-item">Проведення ручного тестування веб-сайтів і мобільних застосунків</li>
+          <li class="company-duties-item">Ідентифікація та документування багів, помилок і недоліків</li>
+          <li class="company-duties-item">Розробка та виконання тестових сценаріїв і тест-кейсів</li>
+          <li class="company-duties-item">Співпраця з командами розробників для покращення якості програмного забезпечення</li>
+          <li class="company-duties-item">Верифікація виправлень багів і перевірка регресійних тестів</li>
+          <li class="company-duties-item">Аналіз продуктивності SPA і статичних сайтів</li>
+          <li class="company-duties-item">Розробка та впровадження стратегій тестування для нових функціональних можливостей</li>
+        </ul>
+      </div>
 
-  <h4>Гусак звичайний</h4>
-  <h5>ФОП Баба Надя</h5>
-  <p>June 2014 - February 2015 | Ukraine</p>
-  <ul>
-    <li>Прогулянки волошковими полями</li>
-    <li>Ґа-ґа-ґа з друзями</li>
-    <li>Залякування перехожих та гостей (іноді наздоганяв та кусав)</li>
-    <li>Охорона консервації та заготовка банок з огірками</li>
-  </ul>
-    
-  <!-- Education -->
+      <!-- Company 3 -->
 
-  <h3>Education</h3>
+      <div class="company-container">
+        <h4 class="company-position">Гусак звичайний</h4>
+        <h5 class="company-position-accent">ФОП Баба Надя</h5>
+        <p class="company-period">June 2014 - February 2015 | Ukraine</p>
+        <ul class="company-duties-list">
+          <li class="company-duties-item">Прогулянки волошковими полями</li>
+          <li class="company-duties-item">Ґа-ґа-ґа з друзями</li>
+          <li class="company-duties-item">Залякування перехожих та гостей (іноді наздоганяв та кусав)</li>
+          <li class="company-duties-item">Охорона консервації та заготовка банок з огірками</li>
+        </ul>
+      </div>
+    </div>
 
-  <!-- Education 1 -->
+    <!-- Education -->
 
-  <h4>Національний біологічний університет ім. Степана Бандери</h4>
-  <strong>Management</strong>
-  <p>September 2009 - June 2014 | Ukraine</p>
+    <h3 class="main-content-title">Education</h3>
 
-  <!-- Education 2 -->
+    <!-- Education 1 -->
 
-  <h4>Hillel School</h4>
-  <strong>QA Manual</strong>
-  <p>March 2024 - up to now | Ukraine</p>
+    <h4 class="education-university">Національний біологічний університет ім. Степана Бандери</h4>
+    <h5 class="education-specialization">Management</h5>
+    <p class="education-period">September 2009 - June 2014 | Ukraine</p>
 
-  <!-- Tech skills -->
+    <!-- Education 2 -->
 
-  <h3>Tech Skills</h3>
-  <ul>
-    <li>HTML, CSS</li>
-    <li>JavaScript</li>
-    <li>Запуск ракет</li>
-    <li>Ехолокація ворожої техніки</li>
-    <li>Біологічні дослідження</li>
-    <li>Високоточні удари по мацкві</li>
-  </ul>
+    <h4 class="education-university">Hillel School</h4>
+    <h5 class="education-specialization">QA Manual</h5>
+    <p class="education-period">March 2024 - up to now | Ukraine</p>
 
-  <!-- Soft skills -->
+    <!-- Tech skills -->
 
-  <h3>Soft Skills</h3>
-    <ul>
-    <li>Scrum</li>
-    <li>Agile</li>
-    <li>Teamwork</li>
-    <li>Незламність</li>
-    <li>Почуття гумору</li>
-  </ul>
+    <div class="skills-container">
+      <h3 class="skills-title">Tech Skills</h3>
+      <ul class="skills-list">
+        <li>HTML, CSS</li>
+        <li>JavaScript</li>
+        <li>Запуск ракет</li>
+        <li>Ехолокація ворожої техніки</li>
+        <li>Біологічні дослідження</li>
+        <li>Високоточні удари по мацкві</li>
+      </ul>
+    </div>
 
+    <!-- Soft skills -->
+
+    <div class="skills-container">
+      <h3 class="skills-title">Soft Skills</h3>
+        <ul class="skills-list">
+        <li>Scrum</li>
+        <li>Agile</li>
+        <li>Teamwork</li>
+        <li>Незламність</li>
+        <li>Почуття гумору</li>
+      </ul>
+    </div>
+  </main>
+  <footer class="wrapper">
+    <p>&copy; 2024 Banderogoose</p>
+  </footer>
 </body>
 </html>

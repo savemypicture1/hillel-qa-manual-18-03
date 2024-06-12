@@ -1,0 +1,159 @@
+body {
+    width: 100vw;
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    color: #595959;
+}
+
+header, main{
+    padding: 15px 0;
+}
+
+strong {
+    color: black;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 26px;
+}
+
+.about-me {
+    margin-bottom: 40px;
+}
+
+.my-profession {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.my-name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 55px;
+    margin-bottom: 8px;
+}
+
+.my-summary {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.projects-container {
+    margin-bottom: 44px;
+}
+
+.main-content-title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.projects-list {
+    padding-left: 18px;
+}
+
+.projects-item {
+    font-size: 14px;
+    line-height: 24px;
+    list-style: decimal;
+}
+
+.project {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.companies-container {
+    margin-bottom: 40px;
+}
+
+.company-container {
+    margin-bottom: 8px;
+}
+
+.company-position {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.company-position-accent {
+    color: #6096FF;
+}
+
+.company-period {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 8px;
+}
+
+.company-duties-list {
+    padding-left: 18px;
+}
+
+.company-duties-item {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.education-university {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6096FF;
+    margin-bottom: 8px;
+}
+
+.education-specialization {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.education-period {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 8px;
+}
+
+.skills-container {
+    margin-bottom: 40px;
+}
+
+.skills-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.skills-list {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.gallery-wrapper img {
+    width: calc((100% - 4px) / 2);
+}

@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <title>Welcome to My Gallery</title>
+      </head>
 <body>
     <header>
-        <h1>Gallery</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Photo Gallery</h2>
-            <div>
-                <img src="../images/1.webp" width="600" alt="At work">
-                <img src="../images/2.webp" width="600" alt="At work">
-                <img src="../images/3.webp" width="600" alt="At work">
-                <img src="../images/4.webp" width="600" alt="At work">
-                <img src="../images/5.webp" width="600" alt="At work">
-                <img src="../images/6.webp" width="600" alt="At work">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Banderogoose</p>
-    </footer>
+        <div class="wrapper">
+            <h1 class="title">Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        <main class="wrapper">
+            <section>
+                <h2>Photo Gallery</h2>
+                <div class="gallery-wrapper">
+                    <img src="../images/1.webp" width="400" alt="At work">
+                    <img src="../images/2.webp" width="400" alt="At work">
+                    <img src="../images/3.webp" width="400" alt="At work">
+                    <img src="../images/4.webp" width="400" alt="At work">
+                    <img src="../images/5.webp" width="400" alt="At work">
+                    <img src="../images/6.webp" width="400" alt="At work">
+                </div>
+            </section>
+        </main>
+        <footer class="wrapper">
+            <p>&copy; 2024 Banderogoose</p>
+        </footer>
 </body>
 </html>
